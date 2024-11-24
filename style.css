@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #71987f;
+    
 }
 
 
@@ -29,6 +29,7 @@ header {
     margin-right: 7px;
 
     border-radius: 5px;
+    
 }
 
 .logo {
@@ -40,9 +41,7 @@ header {
 }
 
 
-.logo a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-}
+
 
 .nupud {
     display: flex;
@@ -58,6 +57,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-family: FreeMono, monospace;
+    
 }
 
 .nupud button:hover {
