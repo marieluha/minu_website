@@ -32,9 +32,9 @@
 
 /* Each individual slide - takes up full width of the container */
 .slide {
-    min-width: 100%; /* Each slide takes up 100% of the slider container's width */
-    height: 450px; /* Fixed height for each slide */
-    width: 500px;
+    flex: 0 0 auto; /* Ensures slides are correctly aligned in the flex container */
+    width: 100%; /* Matches the width of the slider container */
+    height: auto; /* Allow height to adjust dynami*/
     transition: transform 0.5s ease-in-out; /* Smooth transition when slides are changed */
 }
 
@@ -42,7 +42,7 @@
 .slide img {
     width: 100%; /* Image width matches the slide width */
     height: 100%; /* Image height matches the slide height */
-    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
+    object-fit: contain; /* Images are scaled to cover the entire slide, cropping if necessary */
     border-radius: 10px; /* Rounds the corners of the images to match the slider */
 }
 
@@ -95,7 +95,7 @@
     height: 15px; /* Fixed height for the dots */
     width: 15px; /* Fixed width for the dots */
     margin: 0 5px; /* Spacing between the dots */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(144, 144, 144, 0.5); /* Semi-transparent white background */
     border-radius: 50%; /* Makes the dots round */
     display: inline-block; /* Ensures dots are inline */
     cursor: pointer; /* Changes cursor to pointer on hover */
@@ -104,5 +104,5 @@
 
 /* Styling for the active dot - indicates the current slide */
 .dot.active {
-    background-color: rgba(255, 255, 255, 1); /* Solid white background for the active dot */
+    background-color: #9bbfa0 /* Solid white background for the active dot */
 }
