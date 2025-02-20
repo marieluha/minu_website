@@ -114,26 +114,26 @@ header {
 }
 
 .content {
-    display: flex;               /* Arrange children side-by-side */
-    justify-content: space-between; /* Optional: add space between left and right */
-    padding: 20px;               /* Space around the content */
+    display: flex;               
+    justify-content: space-between; 
+    padding: 20px;              
 }
 
-/* Left and right sides */
+
 .left-side, .right-side {
-    width: 48%;                  /* Each takes up almost half the width */
+    width: 48%;                 
     padding: 10px;
-    background-color: #f0f0f0;   /* Light background color for contrast */
-    border-radius: 8px;          /* Optional: rounded corners */
+    background-color: #f0f0f0;   
+    border-radius: 8px;          
 }
 
-/* Adjust for smaller screens */
+
 @media (max-width: 768px) {
     .content {
-        flex-direction: column;  /* Stack left and right vertically */
+        flex-direction: column;  
     }
     .left-side, .right-side {
-        width: 100%;             /* Full width for smaller screens */
+        width: 100%;             
     }
 }
 
